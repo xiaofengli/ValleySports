@@ -21,14 +21,29 @@
   		width: 100%;
   		height: auto;
   		border-top: solid 1px #eee;
+
 	}
 
-	.footer p {
+	.footer ul {
+	  	list-style: none;
+	  	padding-top: 10px;
+	  	margin-left: -30px;
+	}
+	
+	.footer li {
+	
+	}
+	
+	.footer ul p {
+		color:#6e6e6e;	  	
+	}
+	
+	.footer .copyright {
   		margin-top: 30px;
 	}
   
   	footer a {
-  		color:#ffffff;
+  		color:#6e6e6e;
   	}
   	
   	/*Overwrite std css*/
@@ -129,7 +144,7 @@
 <footer class= "footer bg-dark">
     <div class="container">
        <div class="row text-white text-center"> 
-                <div class="col-lg-4 col-md-4 col-sm-4 " >
+                <div class="col-lg-4 col-md-4 col-sm-4" >
                     <span>Company</span>   
                     <ul class="contact">
                           <li>
@@ -137,9 +152,6 @@
                           </li>
                           <li>
                              <a href="#">About</a>
-                          </li>
-                          <li>
-                            <a href="#">Blog</a>
                           </li>
                           <li>
                              <a href="#">Gallery </a>
@@ -171,10 +183,10 @@
                     </ul>
                 </div>
                <div class="col-lg-4 col-md-4 col-sm-4">
+                   <span>Contact</span> 
                     <ul class="contact">
-                         <span>Contact</span> 
-                         <li>
-                            <p class="text-white">Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                       <li>
+                            <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
                           </li>
                          <li>
                             <p >+90 1234 56789</p>
@@ -184,11 +196,11 @@
                           </li>
                      </ul>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <div class="copyright col-lg-12 col-md-12 col-sm-12 text-center">
                 &copy; Valley Sports LLC
                 </div>
         </div>  <!-- End of Row -->
        </div> 
- </footer>
+</footer>
 </body>
 </html>
