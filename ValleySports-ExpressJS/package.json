@@ -16,6 +16,4 @@
 	    "babel-cli": "^6.24.0",
 	    "babel-preset-es2015": "^6.24.0"
   }
-  //touch .babelrc in your project root
-  //https://www.codementor.io/iykyvic/writing-your-nodejs-apps-using-es6-6dh0edw2o
 }
