@@ -39,6 +39,14 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.set('port', process.env.PORT || 80);
+var server = app.listen(app.get('port'),
+		function(req, res) {console.log('Listening on port ' + app.get('port'));}
+		     );
+
+reload(server,app);
+
 module.exports = app;
+
 
 //DEBUG=valleysports-expressjs:* npm start
