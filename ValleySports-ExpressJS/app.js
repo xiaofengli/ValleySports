@@ -1,3 +1,6 @@
+// ES6 should be enabled
+// to start it ‘sudo npm start’
+
 var createError = require('http-errors');
 var express = require('express');
 var reload = require('reload');
