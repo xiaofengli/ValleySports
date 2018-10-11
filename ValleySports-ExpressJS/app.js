@@ -1,38 +1,44 @@
+var createError = require('http-errors');
+var express = require('express');
+var reload = require('reload');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-/**
- * Module dependencies.
- */
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
-//TODO use import and get this thing working
-// https://medium.com/@purposenigeria/build-a-restful-api-with-node-js-and-express-js-d7e59c7a3dfb
+var app = express();
 
-const express = require('express');
-const routes = require('./routes');
-const user = require('./routes/user');
-const http = require('http');
-const path = require('path');
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
-const app = express();
-
-// all environments
-app.set('port', process.env.PORT || 80);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
-if ('development' === app.get('env')) {
-  app.use(express.errorHandler());
-}
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
-app.get('/', routes.index);
-app.get('/users', user.list);
-
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
+
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;
+
+//DEBUG=valleysports-expressjs:* npm start
