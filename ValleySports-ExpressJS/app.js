@@ -25,10 +25,13 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
+var productsRouter = require('./routes/products');
+
 app.use('/', indexRouter);
 app.use('/contact', contactRouter);
 app.use('/about', aboutRouter);
 app.use('/users', usersRouter);
+app.use('/products', productsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
