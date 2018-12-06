@@ -1,14 +1,14 @@
 // ES6 should be enabled
 // to start it ‘sudo npm start’
 
-var createError = require('http-errors');
-var express = require('express');
-var reload = require('reload');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+import createError from 'http-errors';
+import express from 'express';
+import reload from 'reload';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,17 +21,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // set up controller
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var contactRouter = require('./routes/contact');
-var aboutRouter = require('./routes/about');
-var productsRouter = require('./routes/products');
-
-app.use('/', indexRouter);
-app.use('/contact', contactRouter);
-app.use('/about', aboutRouter);
-app.use('/users', usersRouter);
-app.use('/products', productsRouter);
+app.use(require('./routes/index'));
+app.use(require('./routes/contact'));
+app.use(require('./routes/about'));
+app.use(require('./routes/users'));
+app.use(require('./routes/products'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -50,8 +44,9 @@ app.use(function(err, req, res, next) {
 });
 
 app.set('port', process.env.PORT || 80);
-var server = app.listen(app.get('port'),
-		function(req, res) {console.log('Listening on port ' + app.get('port'));}
+
+const server = app.listen(app.get('port'),
+		(req, res) => {console.log('Listening on port ' + app.get('port'));}
 		     );
 
 reload(server,app);
