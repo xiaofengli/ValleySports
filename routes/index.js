@@ -10,4 +10,25 @@ router.get('/', function(req, res, next) {
 	res.sendFile(path.join(__dirname + '/../views/index.html'));
 });
 
+router.get('/huntingparka', function(req, res, next) {
+	// this passes the vars to the index.pug
+    //res.render('index', { title: 'Express' });
+	console.log(path.join(__dirname + '/../views/huntingparka.html'));
+	res.sendFile(path.join(__dirname + '/../views/huntingparka.html'));
+});
+
+router.get('/swimshort', function(req, res, next) {
+	// this passes the vars to the index.pug
+    //res.render('index', { title: 'Express' });
+	console.log(path.join(__dirname + '/../views/swimshort.html'));
+	res.sendFile(path.join(__dirname + '/../views/swimshort.html'));
+});
+
+router.get('/boardshort', function(req, res, next) {
+	// this passes the vars to the index.pug
+    //res.render('index', { title: 'Express' });
+	console.log(path.join(__dirname + '/../views/boardshort.html'));
+	res.sendFile(path.join(__dirname + '/../views/boardshort.html'));
+});
+
 module.exports = router;
