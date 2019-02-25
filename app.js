@@ -25,7 +25,9 @@ app.use(require('./routes/index'));
 app.use(require('./routes/contact'));
 app.use(require('./routes/about'));
 app.use(require('./routes/users'));
+
 app.use(require('./routes/products'));
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
