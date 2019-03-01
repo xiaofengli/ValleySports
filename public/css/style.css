@@ -1,18 +1,31 @@
-/*
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-*/
-
-/* Make the image fully responsive */
+ .container ｛
+   		padding-right: -20px;
+   		padding-left: -20px;
+    ｝
+    
+  	/* Make the image fully responsive */
   	.carousel-inner img {
+  	　　padding-top:20px;
     	width: 100%;
     	height: 100%;
+    	overflow:hidden;
+  	}
+  	
+  	.carousel {
+  	    margin-top: 50px;
+  	}
+  	
+  	.carousel .carousel-inner {
+    	height:100%;    
+    }
+  	 	
+  	/*Overwrite std css*/
+  	.ml-auto {
+	  	margin-right: 100px; 
+  	}
+  	
+  	.carousel-caption {
+  		margin-top: 200px;
   	}
 
   	.footer {
@@ -48,15 +61,47 @@ a {
   	/*Overwrite std css*/
   	footer .container {
   		margin-top: 30px;
+  		padding-top: 30px;
   		padding-bottom: 20px;
   		min-height:250px;
   	}
   	
-  	/*Overwrite std css*/
-  	.ml-auto {
-	  	margin-right: 100px; 
+  　.productContainer {
+      max-width: 750px;
+   	  padding-bottom: 20px;
+   	  width: 100%;
+   	  padding-right: 15px;
+   	  padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
   	}
-  	
-  	.carousel-caption {
-  		margin-top: 200px;
-  	}
+ 
+   .containerWrapper {
+    position: relative;
+   	padding-top: 20px;
+   	padding-bottom: 20px;
+   }
+   
+   .vsText {
+    box-sizing:border-box;
+	color:rgb(0, 0, 0);
+	display:block;
+	font-family:RobotoCn, Arial, sans-serif;
+	font-size:18px;
+	font-stretch:100%;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-east-asian:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:400;
+	height:36px;
+	line-height:34px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:10px;
+	padding-top:2px;
+	text-align:center;
+	text-size-adjust:100%;
+	width:269.828px;
+   }
