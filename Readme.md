@@ -1,5 +1,16 @@
-1. To build it, in local try `sudo npm run build`, in deployment server `npm run build`
-2. To run it, try `sudo npm start`, in deployment server `nohup npm start`
+# Deployment note
+
+## devepment
+`sudo npm run build`
+`sudo npm run dev`
+
+## deployment
+`sh deploy.sh`
+`cd dist`
+`nohup npm start  &`
+
+When we build it, there is a dist dir in local, when we deploy.sh it, it will copy the dist/ to the remote server,
+then in the dist/ we install the libs, and then `npm start` as it will have all the compiled good files.
 
 https://codeburst.io/how-to-minify-your-static-site-d90565c9aa21
 ramraf
