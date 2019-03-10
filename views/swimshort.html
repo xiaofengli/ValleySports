@@ -35,63 +35,48 @@
     		  var color = $('#crimson').attr('id');
   			  		$('#colorValue').text(color);
     	});
+    	
+    	$('#aqua').click(function() {
+  		  var color = $('#aqua').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#aquamarine').click(function() {
+  		  var color = $('#aquamarine').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#darkred').click(function() {
+  		  var color = $('#darkred').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#MediumBlue').click(function() {
+  		  var color = $('#MediumBlue').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#RoyalBlue').click(function() {
+  		  var color = $('#RoyalBlue').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#Orange').click(function() {
+  		  var color = $('#Orange').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#SkyBlue').click(function() {
+  		  var color = $('#SkyBlue').attr('id');
+			  		$('#colorValue').text(color);
+  		});
+    	
+    	$('#Navy').click(function() {
+  		  var color = $('#Navy').attr('id');
+			  		$('#colorValue').text(color);
+  		});
     }); 
     	
-    $(document).ready(function() {
-    	$('#aqua').click(function() {
-    		  var color = $('#aqua').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    }); 
-    
-    $(document).ready(function() {
-    	$('#aquamarine').click(function() {
-    		  var color = $('#aquamarine').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    }); 
-  
-    $(document).ready(function() {
-    	$('#darkred').click(function() {
-    		  var color = $('#darkred').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    }); 
- 
-    $(document).ready(function() {
-    	$('#MediumBlue').click(function() {
-    		  var color = $('#MediumBlue').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    }); 
-    
-    $(document).ready(function() {
-    	$('#RoyalBlue').click(function() {
-    		  var color = $('#RoyalBlue').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    });
- 　
-    $(document).ready(function() {
-    	$('#Orange').click(function() {
-    		  var color = $('#Orange').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    });
-
-    $(document).ready(function() {
-    	$('#SkyBlue').click(function() {
-    		  var color = $('#SkyBlue').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    });
-    $(document).ready(function() {
-    	$('#Navy').click(function() {
-    		  var color = $('#Navy').attr('id');
-  			  		$('#colorValue').text(color);
-    	});
-    });
- 
 　</script>
   
 </head>
@@ -167,7 +152,6 @@
 	   	<div class="carousel-item">
 		    <img src="/images/swimshorts/red/red_2d.png" alt="Keyring Hook" width="1100" height="500">
 		    <div class="carousel-caption text-dark" >
-		
 		    </div>
 	   </div>
 	   
@@ -179,40 +163,18 @@
 	    <span class="carousel-control-next-icon"></span>
 	  </a>
 	  </div>
-</div> <!-- End of slider-->
+	</div> <!-- End of slider-->
+ </div> <!-- End of container  -->
  
-    
-  <b> Product Description </b>
-	<section>
-	  <b>Key Features</b>
-	    <ul>
-	    <li>Ultra thin and quick dry fabric offers amazing comfort</li>
-	  	<li>100 % Polyester and machine washable.</li>
-	  	<li>Elastic band and adjustable drawstring closure</li>
-	  	<li>Mesh lining</li>
-	  	</ul>
-  	</section>
-  	
-  	<section>
-  	  <h1>MSRP $18</h1>
-  	  <h2>Whole sale price: $6 with a purchase of 15-20 minimum in each size</h2>
-  	  <h2>Size from S, M, L, XL, XXL</h2>
-  	  <ul>
-  	    <li>Small: Waist(29-34 inch)/Thigh diameter: (11.5 inch)</li>
-		<li>Medium: Waist(31-36 inch)/Thigh diameter: (12 inch)</li>
-		<li>Large: Waist(32-38 inch)/Thigh diameter: (12 inch)</li>
-		<li>XLarge: Waist(33-38 inch)/Thigh diameter: (12 inch)</li>
-		<li>XXLarge: Waist(34-40 inch)/Thigh diameter: (13 inch)</li>
-  	  </ul>
-  	</section>
-  	
-  	
-  	 <div id="colorField"><span>Color:</span><div id="colorValue"></div> </div>
-  	  
-  	   <div class="flex-container">
+ 
+ <div class="container">
+  　<div class = "containerWrapper">
+    	<div id="colorField d-flex justify-content-center"><span>Color:</span><div id="colorValue"></div> 
+    	</div>
+  	    <div class="flex-container">
 		     	  <div id="aqua">
 		     	 	<svg width="30" height="30">
-	   		 			<rect width="100%" height="100%" fill="aqua" />
+	   		 			<rect width="100" height="100" fill="aqua" />
 				 	</svg>
 				  </div>
 				  <div id="crimson">
@@ -257,8 +219,36 @@
 				  </div>
 			 <!--https://www.w3schools.com/colors/colors_names.asp--->
 	    </div>
-
-</div> <!-- End of container  -->
+   </div>
+</div>
+ 
+<div class="container">
+  <div class = "containerWrapper">
+  <h2> Product Description </h2>
+	<section>
+	  <b>Key Features</b>
+	    <ul>
+	    <li>Ultra thin and quick dry fabric offers amazing comfort</li>
+	  	<li>100 % Polyester and machine washable.</li>
+	  	<li>Elastic band and adjustable drawstring closure</li>
+	  	<li>Mesh lining</li>
+	  	</ul>
+  	</section>
+  	
+  	<section>
+  	  <h1>MSRP $18</h1>
+  	  <h2>Whole sale price: $6 with a purchase of 15-20 minimum in each size</h2>
+  	  <h2>Size from S, M, L, XL, XXL</h2>
+  	  <ul>
+  	    <li>Small: Waist(29-34 inch)/Thigh diameter: (11.5 inch)</li>
+		<li>Medium: Waist(31-36 inch)/Thigh diameter: (12 inch)</li>
+		<li>Large: Waist(32-38 inch)/Thigh diameter: (12 inch)</li>
+		<li>XLarge: Waist(33-38 inch)/Thigh diameter: (12 inch)</li>
+		<li>XXLarge: Waist(34-40 inch)/Thigh diameter: (13 inch)</li>
+  	  </ul>
+  	</section>
+  </div>
+</div>
 
 <footer class= "footer bg-dark">
     <div class="container">
