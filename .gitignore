@@ -1,0 +1,5 @@
+#ignore the file under /dist
+/dist
+/node_modules
+.babelrc
+nohup.out

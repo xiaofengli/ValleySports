@@ -88,26 +88,7 @@
    	padding-bottom: 20px;
    }
    
-   .vsText {
-    box-sizing:border-box;
-	color:rgb(0, 0, 0);
-	display:block;
-	font-family:RobotoCn, Arial, sans-serif;
-	font-size:18px;
-	font-stretch:100%;
-	font-style:normal;
-	font-variant-caps:normal;
-	font-variant-east-asian:normal;
-	font-variant-ligatures:normal;
-	font-variant-numeric:normal;
-	font-weight:400;
-	height:36px;
-	line-height:34px;
-	padding-bottom:0px;
-	padding-left:0px;
-	padding-right:10px;
-	padding-top:2px;
-	text-align:center;
-	text-size-adjust:100%;
-	width:269.828px;
+   h2 {
+    display: block;
    }
+   
