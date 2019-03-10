@@ -8,6 +8,9 @@
 
 ## deployment
 
+ssh to the server, and `ps axuw|grep node`, stop the services.
+Then performance the following from your side.
+
 `sh deploy.sh`
 
 `cd dist`
