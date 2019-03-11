@@ -2,26 +2,23 @@
 
 ## devepment
 
-`sudo npm run build`
-
-`sudo npm run dev`
+Run `sudo npm run dev`
 
 ## deployment
 
-ssh to the server, and `ps axuw|grep node`, stop the services.
-Then performance the following from your side.
-
-`sh deploy.sh`
+### clean deployment
 
 `cd dist`
 
-`nohup npm start  &`
+run `kill.sh`
 
-When we build it, there is a dist dir in local, when we deploy.sh it, it will copy the dist/ to the remote server,
-then in the dist/ we install the libs, and then `npm start` as it will have all the compiled good files.
+then run `deploy.sh`
 
 https://codeburst.io/how-to-minify-your-static-site-d90565c9aa21
 ramraf
+
+### quick deploy
+in local, just run deploy.sh and type password
 
 ## others
 
