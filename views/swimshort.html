@@ -28,6 +28,16 @@
 		  font-size: 30px;
 	  }
 	  
+	  .carousel-inner {
+		.item {
+			&.active {
+				img {
+					max-height: 650px;
+  					margin: auto;
+			}
+		}
+	}
+}
   </style>
   
   <script>
@@ -127,38 +137,48 @@
      Must use 350 * 350 images. And need to fix for broadshort, also need to check the css 
      to centerize the items.
   -->
-	<div class="carousel-inner d-flex d-flex align-items-center ">
+	<div class="carousel-inner">
 	   <div class="carousel-item active  ">
+	     <div class="d-flex align-items-center justify-content-center min-vh-100">
 	   		<img src="/images/swimshorts/deepblue/deepblue_2d_350px_350px.png" alt="deepblue swimshort 2d">
 	   		<div class="carousel-caption text-dark"></div>
+	   	 </div>
 	   </div>
 	    
 	   <div class="carousel-item   ">
+	     <div class="d-flex align-items-center justify-content-center min-vh-100">
 	      	<img src="/images/swimshorts/mediumblue/mediumblue_2d_350px_350px.png" alt="mediumblue swimshort">
 	        <div class="carousel-caption text-dark"></div>
+	     </div>
 	   </div>
 	  
 	　　<div class="carousel-item   ">
+		 <div class="d-flex align-items-center justify-content-center min-vh-100">
 		    <img src="/images/swimshorts/orange/orange_2d_350px_350px.png" alt="orange color swimshort">
-		    <div class="carousel-caption text-dark" >
-		    </div>
+		    <div class="carousel-caption text-dark"></div>
+		 </div>
 	   </div>
 	   
 	   <div class="carousel-item   ">
+	   	 <div class="d-flex align-items-center justify-content-center min-vh-100">
 		    <img src="/images/swimshorts/red/red_2d_350px_350px.png" alt="red swimshort">
-		    <div class="carousel-caption text-dark" >
-		    </div>
+		    <div class="carousel-caption text-dark"></div>
+		 </div>
 	   </div>
 	   
 	   <div class="carousel-item  ">
-		    <img src="/images/swimshorts/orange/orange_2d_meshlineing_350px_350px.png" alt="mesh lining">
-		    <div class="carousel-caption text-dark" >
-		    </div>
+	   	  <div class="d-flex align-items-center justify-content-center min-vh-100">
+			    <img src="/images/swimshorts/orange/orange_2d_meshlineing_350px_350px.png" alt="mesh lining">
+			    <div class="carousel-caption text-dark" >
+			    </div>
+		  </div>
 	   </div>
 	   
 	     <div class="carousel-item ">
+	       <div class="d-flex align-items-center justify-content-center min-vh-100">
 		    <img src="/images/swimshorts/red/red_3d_back_350px_350px.png" alt="red swimshort 3d">
 		    <div class="carousel-caption text-dark" >
+		    </div>
 		    </div>
 	   </div>
 	   
